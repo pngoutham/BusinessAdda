@@ -83,7 +83,7 @@ public class RepositoryFactoryBean implements FactoryBean, ResourceLoaderAware,
 			// props.load(in);
 
 			props.setProperty("rep.home",
-					"C:\\jackrabbit\\repository");
+					"/media/Drive 1/Softwares/idea-1/codebase/git/customsitecreator/csc_repository");
 			props.setProperty("wsp.name", "primary");
 			// props.setProperty("", "");
 			// props.setProperty("", "");

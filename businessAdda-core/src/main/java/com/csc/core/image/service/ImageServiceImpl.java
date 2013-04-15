@@ -13,7 +13,7 @@ import com.csc.core.image.dao.ImageDao;
 
 public class ImageServiceImpl implements ImageService {
 
-	ImageDao repositoryDao;
+	private ImageDao repositoryDao;
 
 	public void setRepositoryDao(ImageDao repositoryDao) {
 		this.repositoryDao = repositoryDao;

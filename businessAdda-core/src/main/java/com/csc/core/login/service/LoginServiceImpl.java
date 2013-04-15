@@ -7,11 +7,14 @@ import com.csc.core.framework.hibernate.properties.Login;
 import com.csc.core.framework.hibernate.properties.Security;
 import com.csc.core.login.dao.LoginDao;
 
-@Service
+@Service("loginService")
 public class LoginServiceImpl implements LoginService {
 
-	@Autowired
 	private LoginDao loginDao;
+
+	public void setLoginDao(LoginDao loginDao) {
+		this.loginDao = loginDao;
+	}
 
 	@Override
 	public boolean authenticate(Login login) {
